@@ -197,7 +197,7 @@
                 const fileBuffer = new Uint8Array(arrayBuffer);
 
                 occtimportjs().then(async (occt) => {
-                    const result = occt.ReadStepFile(fileBuffer, null);
+                    const result = occtimportjs.ReadStepFile(fileBuffer);
                     if (result.success) {
                         buildMeshFromStepResult(result);
                     } else {
