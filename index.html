@@ -140,9 +140,9 @@
                     const result = occt.ReadStepFile(fileBuffer);
 
                     if (result.success) {
-                        statusDiv.innerText = "Stato: Rendering 3D...";
+                        statusDiv.innerText = "Stato: Calcolo rendering 3D...";
                         creaGeometria3D(result);
-                        statusDiv.innerText = 'Stato: File caricato con successo (${file.name})';
+                        statusDiv.innerText = "Stato: File visualizzato con successo!";
                     } else {
                         statusDiv.innerText = "Stato: Errore nella conversione del file STEP.";
                     }
